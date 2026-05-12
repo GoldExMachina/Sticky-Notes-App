@@ -57,27 +57,25 @@ Home Screen	Note Editor
 	
 Widget View	Color Tools
 
-
-	
 ⚙️ Features
-Create, edit, and delete sticky notes
-Persistent storage using Core Data
-Home screen widget support (WidgetKit)
-Custom UI components and color utilities
-Multi-screen navigation using UIKit
-Real-time sync between app and widget
+- Create, edit, and delete sticky notes
+- Persistent storage using Core Data
+- Home screen widget support (WidgetKit)
+- Custom UI components and color utilities
+- Multi-screen navigation using UIKit
+- Real-time sync between app and widget
 
 
 🧱 Tech Stack
-Language: Swift
-UI Framework: UIKit
-Persistence: Core Data
-Widgets: WidgetKit
-Architecture: MVC
-IDE: Xcode
+- Language: Swift
+- UI Framework: UIKit
+- Persistence: Core Data
+- Widgets: WidgetKit
+- Architecture: MVC
+- IDE: Xcode
 
 
-📦 Project Overview (better than file tree)
+📦 Project Overview 
 This project is a multi-target iOS application built using Swift and UIKit.
 
 It includes:
