@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 📱 Sticky Notes App (iOS)
 
 A native iOS sticky notes application built using Swift, UIKit, and Core Data, featuring persistent note storage and a companion widget for quick access.
@@ -6,11 +6,10 @@ A native iOS sticky notes application built using Swift, UIKit, and Core Data, f
 # 📱 Sticky Notes App (iOS)
 
 A native iOS sticky notes application built with **Swift**, **UIKit**, and **Core Data**, featuring persistent local storage and a companion home screen widget for quick note access.
->>>>>>> ac553b0 (Fix project structure section)
 
 ✨ Overview
 
-<<<<<<< HEAD
+
 Sticky Notes App is a lightweight productivity tool designed to let users quickly create, edit, and manage notes. It also includes a home screen widget for fast glanceable access to notes without opening the app.
 =======
 ## 🎯 Overview
@@ -18,11 +17,10 @@ Sticky Notes App is a lightweight productivity tool designed to let users quickl
 Sticky Notes App is a lightweight productivity tool designed to help users quickly capture, edit, and manage notes. It also includes a widget extension for instant access to notes directly from the iOS home screen.
 
 This project was built as part of my iOS development learning journey, focusing on real-world app architecture, persistence, and multi-target Xcode projects.
->>>>>>> ac553b0 (Fix project structure section)
 
 This project was built as a hands-on exploration of iOS development, focusing on:
 
-<<<<<<< HEAD
+
 UIKit architecture
 Data persistence
 WidgetKit integration
@@ -38,11 +36,10 @@ Git version control workflow
 - 🔄 Real-time sync between app and widget
 - 🎨 Custom UI components and layouts
 - 📱 Multi-screen navigation using UIKit
->>>>>>> ac553b0 (Fix project structure section)
 
 Replace filenames if yours differ exactly
 
-<<<<<<< HEAD
+
 Home Screen	Note Editor
 =======
 ## 📸 Screenshots
@@ -56,12 +53,11 @@ Home Screen	Note Editor
 | Widget View | Tools / UI |
 |-------------|------------|
 | ![Widget](Screenshots/Widget%20View.png) | ![Tools](Screenshots/Color%20Simulator.png) |
->>>>>>> ac553b0 (Fix project structure section)
 
 	
 Widget View	Color Tools
 
-<<<<<<< HEAD
+
 	
 ⚙️ Features
 📝 Create, edit, and delete sticky notes
@@ -145,12 +141,11 @@ Git workflow: commits, merges, rebase conflicts, repo restructuring
 📌 Notes
 
 This repository reflects a real development process, including iterative improvements, debugging, and Git history management while learning iOS development.
->>>>>>> ac553b0 (Fix project structure section)
 
 👨‍💻 Author
 
 Alexander Smith
-<<<<<<< HEAD
+
 iOS Developer (Learning / Portfolio Projects)
 =======
 iOS Developer (Portfolio / Learning Projects)
