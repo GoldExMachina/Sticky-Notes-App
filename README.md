@@ -60,28 +60,32 @@ Widget View	Color Tools
 
 	
 ⚙️ Features
-📝 Create, edit, and delete sticky notes
-💾 Persistent storage using Core Data
-🧩 Home screen widget support (WidgetKit)
-🎨 Custom UI elements and color utilities
-📱 Multi-screen UIKit navigation
-🔄 Real-time updates between app and widget
+Create, edit, and delete sticky notes
+Persistent storage using Core Data
+Home screen widget support (WidgetKit)
+Custom UI components and color utilities
+Multi-screen navigation using UIKit
+Real-time sync between app and widget
+
+
 🧱 Tech Stack
 Language: Swift
 UI Framework: UIKit
 Persistence: Core Data
 Widgets: WidgetKit
-Architecture: MVC (UIKit-based)
+Architecture: MVC
 IDE: Xcode
-📦 Project Structure
-Sticky Notes App/
-├── AppDelegate.swift
-├── SceneDelegate.swift
-├── ViewControllers/
-├── Assets.xcassets/
-├── Core Data Model
-├── Widget Extension/
-├── Screenshots/
+
+
+📦 Project Overview (better than file tree)
+This project is a multi-target iOS application built using Swift and UIKit.
+
+It includes:
+- Main app for creating and managing sticky notes
+- Widget extension for quick home screen access
+- Core Data for persistent local storage
+
+
 🚀 How to Run
 
 Clone the repository:
@@ -93,12 +97,16 @@ Open:
 Sticky Notes App.xcodeproj
 Select an iOS Simulator (iPhone recommended)
 Press ▶ Run in Xcode
+
+
 🧠 What I Learned
-Building a multi-target iOS project (App + Widget)
-Managing Core Data relationships and persistence
-Handling UIKit view controllers and navigation flow
-Debugging Xcode build and project structure issues
-Using Git for real-world version control (including conflict resolution and repo restructuring)
+Building a multi-target iOS app (App + Widget)
+Core Data persistence and modelling
+UIKit navigation patterns
+Debugging Xcode project structure issues
+Git workflows (merge conflicts, rebase, cleanup)
+
+
 📌 Notes
 
 This project is part of my learning journey in iOS development. The repository includes real-world Git history reflecting iterative development, debugging, and restructuring.
