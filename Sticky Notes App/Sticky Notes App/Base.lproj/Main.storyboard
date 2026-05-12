@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wI9-xL-drr">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bugging View Controller-->
+        <scene sceneID="bQe-61-BMb">
+            <objects>
+                <viewController storyboardIdentifier="BuggingViewController" id="wI9-xL-drr" customClass="BuggingViewController" customModule="Sticky_Notes_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWi-T0-Wgq">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V8H-xg-Zxm">
+                                <rect key="frame" x="99" y="338.66666666666669" width="204" height="197.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="aEQ-m5-QX5"/>
+                                    <constraint firstAttribute="height" constant="197" id="lnO-Me-Nnx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Icl-7Q-j9d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V8H-xg-Zxm" firstAttribute="centerY" secondItem="vWi-T0-Wgq" secondAttribute="centerY" id="4LF-rj-A3J"/>
+                            <constraint firstItem="V8H-xg-Zxm" firstAttribute="centerX" secondItem="vWi-T0-Wgq" secondAttribute="centerX" id="yWL-Xx-maI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oxl-tC-2gD"/>
+                    <connections>
+                        <outlet property="logoImage" destination="V8H-xg-Zxm" id="MoI-Hv-TYL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2B-OC-2yX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2062.686567164179" y="3.432494279176201"/>
+        </scene>
+        <!--Sticky Note View Controller-->
+        <scene sceneID="MGm-d7-hrG">
+            <objects>
+                <viewController storyboardIdentifier="StickyNoteViewController" id="eyX-oL-pPa" customClass="StickyNoteViewController" customModule="Sticky_Notes_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iqm-Re-hNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-0K-uv3" userLabel="BlueView">
+                                <rect key="frame" x="20" y="62" width="362" height="508"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="One time" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oIh-Jz-O1H">
+                                        <rect key="frame" x="0.0" y="6" width="362" height="412"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Xs-KY-jA1">
+                                <rect key="frame" x="20" y="600" width="362" height="240"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oq2-ny-AYa">
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="OmF-wO-bgh"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="1"/>
+                                            <segment title="2"/>
+                                            <segment title="3"/>
+                                            <segment title="4"/>
+                                            <segment title="5"/>
+                                            <segment title="6"/>
+                                            <segment title="7"/>
+                                            <segment title="8"/>
+                                            <segment title="9"/>
+                                            <segment title="10"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segementedController:" destination="eyX-oL-pPa" eventType="valueChanged" id="kJH-yY-hJB"/>
+                                            <action selector="swipedSegmentController:" destination="eyX-oL-pPa" eventType="touchDragOutside" id="hOz-Ns-jvh"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <colorWell contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sro-ij-rRR">
+                                        <rect key="frame" x="0.0" y="40" width="362" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="F6o-EY-Ngr"/>
+                                        </constraints>
+                                    </colorWell>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBx-Zj-55I">
+                                        <rect key="frame" x="0.0" y="90" width="362" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="d1l-UE-CMf"/>
+                                        </constraints>
+                                        <string key="text">** Widget Install Instructions **
+﻿﻿﻿Tap and hold any icon on your home screen, then tap 'Edit Home Screen'
+﻿﻿﻿Tap the '+' in the upper left-hand corner of the screen.
+Select 'Quicky Sticky' from the list, and tap the 'Add Widget' button.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RDa-S5-oaz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Xs-KY-jA1" firstAttribute="top" secondItem="vTb-0K-uv3" secondAttribute="bottom" constant="30" id="8tZ-eb-KON"/>
+                            <constraint firstItem="RDa-S5-oaz" firstAttribute="trailing" secondItem="5Xs-KY-jA1" secondAttribute="trailing" constant="20" id="ANh-Qd-tfe"/>
+                            <constraint firstItem="RDa-S5-oaz" firstAttribute="bottom" secondItem="5Xs-KY-jA1" secondAttribute="bottom" id="IOf-bE-1XG"/>
+                            <constraint firstItem="vTb-0K-uv3" firstAttribute="leading" secondItem="RDa-S5-oaz" secondAttribute="leading" constant="20" id="mcU-Kl-m64"/>
+                            <constraint firstItem="5Xs-KY-jA1" firstAttribute="leading" secondItem="RDa-S5-oaz" secondAttribute="leading" constant="20" id="qiX-dE-B77"/>
+                            <constraint firstItem="vTb-0K-uv3" firstAttribute="top" secondItem="RDa-S5-oaz" secondAttribute="top" id="rzU-VB-gZO"/>
+                            <constraint firstItem="RDa-S5-oaz" firstAttribute="trailing" secondItem="vTb-0K-uv3" secondAttribute="trailing" constant="20" id="zdR-Jb-eEw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="vTb-0K-uv3" id="6fA-fY-MUx"/>
+                        <outlet property="colourwheel" destination="Sro-ij-rRR" id="LBO-WC-Zdw"/>
+                        <outlet property="segementedControl10" destination="oq2-ny-AYa" id="nyy-xb-8nf"/>
+                        <outlet property="textView" destination="oIh-Jz-O1H" id="LQI-bb-hLd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHd-yi-PYX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2923.8805970149251" y="2.7459954233409607"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cwg-cH-oUX">
+            <objects>
+                <viewController id="gid-Mu-m4S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bnd-05-NTX">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ruu-Vk-5iJ" userLabel="Orange View">
+                                <rect key="frame" x="20" y="62" width="362" height="558"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="My name is" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xaz-WI-nbg">
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="558"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xaz-WI-nbg" secondAttribute="bottom" id="CUJ-Kb-bZq"/>
+                                    <constraint firstItem="Xaz-WI-nbg" firstAttribute="leading" secondItem="ruu-Vk-5iJ" secondAttribute="leading" id="Dl0-J6-sax"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xaz-WI-nbg" secondAttribute="trailing" id="VLv-f5-Bb3"/>
+                                    <constraint firstItem="Xaz-WI-nbg" firstAttribute="top" secondItem="ruu-Vk-5iJ" secondAttribute="top" id="kC2-G0-fvd"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-wq-APh" userLabel="Stack View 1">
+                                <rect key="frame" x="20" y="650" width="362" height="190"/>
+                                <subviews>
+                                    <colorWell contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qkw-hZ-zw8">
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="V5Q-fd-148"/>
+                                        </constraints>
+                                    </colorWell>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ibS-nv-eNR">
+                                        <rect key="frame" x="0.0" y="50" width="362" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="dAW-cy-NZf"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="1"/>
+                                            <segment title="2"/>
+                                            <segment title="3"/>
+                                            <segment title="4"/>
+                                            <segment title="5"/>
+                                            <segment title="6"/>
+                                            <segment title="7"/>
+                                            <segment title="8"/>
+                                            <segment title="9"/>
+                                            <segment title="10"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segementedController:" destination="eyX-oL-pPa" eventType="valueChanged" id="RDd-fI-jgd"/>
+                                            <action selector="swipedSegmentController:" destination="eyX-oL-pPa" eventType="touchDragOutside" id="ylb-YO-F0g"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-I5-Rij">
+                                        <rect key="frame" x="0.0" y="90" width="362" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="oiR-fz-u1Q"/>
+                                        </constraints>
+                                        <string key="text">** Widget Install Instructions **
+﻿﻿﻿Tap and hold any icon on your home screen, then tap 'Edit Home Screen'
+﻿﻿﻿Tap the '+' in the upper left-hand corner of the screen.
+Select 'Quicky Sticky' from the list, and tap the 'Add Widget' button.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mki-yQ-SDG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ruu-Vk-5iJ" firstAttribute="top" secondItem="Mki-yQ-SDG" secondAttribute="top" id="2hU-0u-Tp6"/>
+                            <constraint firstItem="N2v-wq-APh" firstAttribute="top" secondItem="ruu-Vk-5iJ" secondAttribute="bottom" constant="30" id="GSU-72-wia"/>
+                            <constraint firstItem="Mki-yQ-SDG" firstAttribute="trailing" secondItem="ruu-Vk-5iJ" secondAttribute="trailing" constant="20" id="Rpj-y7-dQ4"/>
+                            <constraint firstItem="N2v-wq-APh" firstAttribute="leading" secondItem="Mki-yQ-SDG" secondAttribute="leading" constant="20" id="VdX-EF-rV2"/>
+                            <constraint firstItem="ruu-Vk-5iJ" firstAttribute="leading" secondItem="Mki-yQ-SDG" secondAttribute="leading" constant="20" id="lpQ-3m-uQj"/>
+                            <constraint firstItem="Mki-yQ-SDG" firstAttribute="trailing" secondItem="N2v-wq-APh" secondAttribute="trailing" constant="20" id="xAY-u2-DgI"/>
+                            <constraint firstItem="Mki-yQ-SDG" firstAttribute="bottom" secondItem="N2v-wq-APh" secondAttribute="bottom" id="xDU-3P-OJD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTE-iR-vwq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2062.686567164179" y="-918.53546910755142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
