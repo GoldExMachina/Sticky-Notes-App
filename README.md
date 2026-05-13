@@ -39,16 +39,18 @@ The app includes a WidgetKit extension that:
 - Displays latest note text and selected colour
 
 
+
 ## 📸 Screenshots
 
-### App View
-![App View](Screenshots/app-view.png)
+<p align="center">
+  <img src="Screenshots/app-view.png" width="200"/>
+  <img src="Screenshots/color-simulator.png" width="200"/>
+</p>
 
-### Colour Editor
-![Colour Editor](Screenshots/color-simulator.png)
-
-### Widget Preview
-![Widget](Screenshots/widget-view.png) 
+<p align="center">
+  <img src="Screenshots/find-widget.png" width="200"/>
+  <img src="Screenshots/widget-view.png" width="200"/>
+</p>
 
 🚀 Getting Started
 
