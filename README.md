@@ -38,13 +38,17 @@ The app includes a WidgetKit extension that:
 - Updates on timeline refresh and manual triggers
 - Displays latest note text and selected colour
 
-📸 Screenshots
 
-Screenshots/App View.png  
-Screenshots/Color Simulator.png  
-Screenshots/Find Widget.png  
-Screenshots/Screen Simulator.png  
-Screenshots/Widget View.png  
+## 📸 Screenshots
+
+### App View
+![App View](Screenshots/app-view.png)
+
+### Colour Editor
+![Colour Editor](Screenshots/color-simulator.png)
+
+### Widget Preview
+![Widget](Screenshots/widget-view.png) 
 
 🚀 Getting Started
 
