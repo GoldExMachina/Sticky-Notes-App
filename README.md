@@ -42,20 +42,19 @@ The app includes a WidgetKit extension that:
 
 ## 📸 Screenshots
 
-### 🧭 Main Screen (App Overview)
-![Main Screen](Screenshots/screen-simulator.png)
-
----
-
-### 🏠 App Views
+### 🧭 Main Screen
+<img src="Screenshots/screen-simulator.png" width="250"/>
 
 | App View | Colour Editor |
 |----------|--------------|
-| ![App View](Screenshots/app-view.png) | ![Colour Editor](Screenshots/color-simulator.png) |
+| <img src="Screenshots/app-view.png" width="200"/> | <img src="Screenshots/color-simulator.png" width="200"/> |
 
 | Find Widget | Widget Preview |
 |-------------|----------------|
-| ![Find Widget](Screenshots/find-widget.png) | ![Widget Preview](Screenshots/widget-view.png) |
+| <img src="Screenshots/find-widget.png" width="200"/> | <img src="Screenshots/widget-view.png" width="200"/> |
+
+
+
 🚀 Getting Started
 
 Clone the repository:
