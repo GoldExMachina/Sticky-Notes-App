@@ -1,158 +1,71 @@
-
 📱 Sticky Notes App (iOS)
 
-A native iOS sticky notes application built using Swift, UIKit, and Core Data, featuring persistent note storage and a companion widget for quick access.
-=======
-# 📱 Sticky Notes App (iOS)
+A lightweight iOS sticky notes application built with Swift, UIKit, and WidgetKit, designed to provide fast note capture with real-time home screen widget syncing.
 
-A native iOS sticky notes application built with **Swift**, **UIKit**, and **Core Data**, featuring persistent local storage and a companion home screen widget for quick note access.
+This project demonstrates practical iOS development skills including multi-view navigation, data persistence using shared storage, and widget integration.
 
-✨ Overview
-
-
-Sticky Notes App is a lightweight productivity tool designed to let users quickly create, edit, and manage notes. It also includes a home screen widget for fast glanceable access to notes without opening the app.
-=======
-## 🎯 Overview
-
-Sticky Notes App is a lightweight productivity tool designed to help users quickly capture, edit, and manage notes. It also includes a widget extension for instant access to notes directly from the iOS home screen.
-
-This project was built as part of my iOS development learning journey, focusing on real-world app architecture, persistence, and multi-target Xcode projects.
-
-This project was built as a hands-on exploration of iOS development, focusing on:
+✨ Key Features
+📝 Create, edit, and delete sticky notes
+💾 Persistent storage using UserDefaults (with App Group sharing for widget sync)
+🧩 Home screen widget for quick note access (WidgetKit)
+🎨 Custom UI with dynamic colour selection
+🔄 Real-time sync between app and widget
+📱 Multi-screen UIKit navigation with storyboard-based flow
+🧠 What This Project Demonstrates
 
 
-UIKit architecture
-Data persistence
-WidgetKit integration
-Xcode project structure and multi-target apps
-Git version control workflow
+UIKit lifecycle and view controller management
+Data persistence using UserDefaults
+Cross-target data sharing using App Groups
+WidgetKit timeline updates and widget refresh logic
+Handling user input, state updates, and UI synchronisation
+Debugging real-world Xcode + multi-target issues
+Git version control and iterative development workflow
+
+
+🏗 Architecture Overview
+UI Layer: UIKit (Storyboard-based MVC)
+Persistence Layer: UserDefaults + App Group shared container
+Widget Layer: WidgetKit (timeline-based updates)
+Sync Mechanism: Shared UserDefaults + WidgetCenter.reloadAllTimelines()
+
+
+🧩 Widgets
+
+The app includes a WidgetKit extension that:
+
+Reads shared note data from App Group storage
+Updates on timeline refresh and manual triggers
+Displays latest note text and selected colour
 📸 Screenshots
-=======
-## ✨ Features
 
-- 📝 Create, edit, and delete sticky notes
-- 💾 Persistent storage using Core Data
-- 🧩 Home screen widget (WidgetKit integration)
-- 🔄 Real-time sync between app and widget
-- 🎨 Custom UI components and layouts
-- 📱 Multi-screen navigation using UIKit
+(Add your screenshots here)
 
-Replace filenames if yours differ exactly
-
-
-Home Screen	Note Editor
-=======
-## 📸 Screenshots
-
-> Replace filenames if needed to match your repo
-
-| Home Screen | Note Editor |
-|-------------|-------------|
-| ![Home](Screenshots/App%20View.png) | ![Editor](Screenshots/Screen%20Simulator.png) |
-
-| Widget View | Tools / UI |
-|-------------|------------|
-| ![Widget](Screenshots/Widget%20View.png) | ![Tools](Screenshots/Color%20Simulator.png) |
-
-	
-Widget View	Color Tools
-
-⚙️ Features
-- Create, edit, and delete sticky notes
-- Persistent storage using Core Data
-- Home screen widget support (WidgetKit)
-- Custom UI components and color utilities
-- Multi-screen navigation using UIKit
-- Real-time sync between app and widget
-
-
-🧱 Tech Stack
-- Language: Swift
-- UI Framework: UIKit
-- Persistence: Core Data
-- Widgets: WidgetKit
-- Architecture: MVC
-- IDE: Xcode
-
-
-📦 Project Overview 
-This project is a multi-target iOS application built using Swift and UIKit.
-
-It includes:
-- Main app for creating and managing sticky notes
-- Widget extension for quick home screen access
-- Core Data for persistent local storage
-
-
-🚀 How to Run
+Screenshots/App View.png  
+Screenshots/Color Simulator.png  
+Screenshots/Find Widget.png  
+Screenshots/Screen Simulator.png  
+Screenshots/Widget View.png  
+🚀 Getting Started
 
 Clone the repository:
 
 git clone https://github.com/GoldExMachina/Sticky-Notes-App.git
 
-Open:
+Open in Xcode:
 
 Sticky Notes App.xcodeproj
-Select an iOS Simulator (iPhone recommended)
-Press ▶ Run in Xcode
 
+Run on an iOS simulator or device.
 
-🧠 What I Learned
-Building a multi-target iOS app (App + Widget)
-Core Data persistence and modelling
-UIKit navigation patterns
-Debugging Xcode project structure issues
-Git workflows (merge conflicts, rebase, cleanup)
-
-
-📌 Notes
-
-This project is part of my learning journey in iOS development. The repository includes real-world Git history reflecting iterative development, debugging, and restructuring.
-=======
-## 🧱 Tech Stack
-
-- **Language:** Swift
-- **UI Framework:** UIKit
-- **Persistence:** Core Data
-- **Widgets:** WidgetKit
-- **Architecture:** MVC (UIKit-based)
-- **IDE:** Xcode
-
----
-
-## 📁 Project Structure
-
-
-## 🚀 Getting Started
-
-### Requirements
-- Xcode 15+
-- iOS 15+ Simulator (or device)
-
-### Run the project
-
-```bash
-git clone https://github.com/GoldExMachina/Sticky-Notes-App.git
-Open Sticky Notes App.xcodeproj in Xcode
-Select an iPhone simulator
-Press ▶ Run
-
-What I Learned
-Building a multi-target iOS app (Main App + Widget Extension)
-Core Data persistence and data modelling
-UIKit navigation and view controller architecture
-Debugging Xcode build and project structure issues
-Git workflow: commits, merges, rebase conflicts, repo restructuring
-
-📌 Notes
-
-This repository reflects a real development process, including iterative improvements, debugging, and Git history management while learning iOS development.
-
+🛠 Tech Stack
+Swift
+UIKit
+WidgetKit
+UserDefaults (App Groups)
+Xcode
+Core Data (stack included, not used for primary persistence)
 👨‍💻 Author
 
 Alexander Smith
-
 iOS Developer (Learning / Portfolio Projects)
-=======
-iOS Developer (Portfolio / Learning Projects)
->>>>>>> ac553b0 (Fix project structure section)
